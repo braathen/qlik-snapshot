@@ -35,8 +35,10 @@ Backup-QlikState                  Function  Qlik-Snapshot             ...
 
 The idea is that it should both be simple to get started and to use. If a ```Backup-QlikState``` command is issued a folder called **Snapshots** will be created in the current work directory. This folder and all snapshots which will be created below it can be copied or moved, both on the same server but also to another server if desired.
 
+####Backup-QlikState
+
 ```sh
-PS C:\Temp> Get-Help Backup-Qlikstate
+PS C:\Temp> Get-Help Backup-QlikState
 
 NAME
     Backup-QlikState
@@ -46,6 +48,8 @@ SYNTAX
     <string>] [[-PostgresConf] <string>] [[-PostgresLocation] <string>] [[-PostgresAccount] <string>] [[-PostgresPort]
     <string>] [[-PostgresDB] <string>] [[-IncludeArchivedLogs]] [[-Silent]]  [<CommonParameters>]
 ```
+
+####Restore-QlikState
 
 ```sh
 PS C:\Temp> Get-Help Restore-QlikState
@@ -59,6 +63,8 @@ SYNTAX
     <string>] [[-PostgresDB] <string>] [[-IncludeArchivedLogs]] [[-Silent]]  [<CommonParameters>]
 ```
 
+####Find-QlikState
+
 ```sh
 PS C:\Temp> Get-Help Find-QlikState
 
@@ -68,6 +74,8 @@ NAME
 SYNTAX
     Find-QlikState [[-Label] <string>]  [<CommonParameters>]
 ```
+
+####Remove-QlikState
 
 ```sh
 PS C:\Temp> Get-Help Remove-QlikState
