@@ -34,3 +34,47 @@ Backup-QlikState                  Function  Qlik-Snapshot             ...
 ```
 
 The idea is that it should both be simple to get started and to use. If a ```Backup-QlikState``` command is issued a folder called **Snapshots** will be created in the current work directory. This folder and all snapshots which will be created below it can be copied or moved, both on the same server but also to another server if desired.
+
+```sh
+PS C:\Temp> Get-Help Backup-Qlikstate
+
+NAME
+    Backup-QlikState
+
+SYNTAX
+    Backup-QlikState [[-Label] <string>] [[-SenseDataFolder] <string>] [[-CertExportPWD] <string>] [[-PostgresBin]
+    <string>] [[-PostgresConf] <string>] [[-PostgresLocation] <string>] [[-PostgresAccount] <string>] [[-PostgresPort]
+    <string>] [[-PostgresDB] <string>] [[-IncludeArchivedLogs]] [[-Silent]]  [<CommonParameters>]
+```
+
+```sh
+PS C:\Temp> Get-Help Restore-QlikState
+
+NAME
+    Restore-QlikState
+
+SYNTAX
+    Restore-QlikState [[-Number] <int>] [[-SenseDataFolder] <string>] [[-CertExportPWD] <string>] [[-PostgresBin]
+    <string>] [[-PostgresConf] <string>] [[-PostgresLocation] <string>] [[-PostgresAccount] <string>] [[-PostgresPort]
+    <string>] [[-PostgresDB] <string>] [[-IncludeArchivedLogs]] [[-Silent]]  [<CommonParameters>]
+```
+
+```sh
+PS C:\Temp> Get-Help Find-QlikState
+
+NAME
+    Find-QlikState
+
+SYNTAX
+    Find-QlikState [[-Label] <string>]  [<CommonParameters>]
+```
+
+```sh
+PS C:\Temp> Get-Help Remove-QlikState
+
+NAME
+    Remove-QlikState
+
+SYNTAX
+    Remove-QlikState [[-Number] <int>] [[-Silent]]  [<CommonParameters>]
+```
