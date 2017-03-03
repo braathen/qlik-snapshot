@@ -35,6 +35,8 @@ Backup-QlikState                  Function  Qlik-Snapshot             ...
 
 The idea is that it should both be simple to get started and to use. If a ```Backup-QlikState``` command is issued a folder called **Snapshots** will be created in the current work directory. This folder and all snapshots which will be created below it can be copied or moved, both on the same server but also to another server if desired.
 
+The other commands works in the same manner, ```Restore-QlikState```will look for the **Snapshots** folder in the current directory, and so will ```Find-QlikState``` and ```Remove-QlikState``` as well.
+
 ####Backup-QlikState
 
 ```sh
